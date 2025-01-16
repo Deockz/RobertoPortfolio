@@ -1,0 +1,10 @@
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: 80% 50%;
+    height: 100%;
+}
+
+.banner {
+    color: white;
+}
