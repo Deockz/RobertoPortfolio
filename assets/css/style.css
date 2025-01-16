@@ -10,3 +10,9 @@
     width: 150px;
     border-radius: 50%;
 }
+
+.carousel-inner > .carousel-item > img {
+    width:640px;
+    height:360px;
+    object-fit: scale-down;
+  }
