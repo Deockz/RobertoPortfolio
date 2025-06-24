@@ -1,69 +1,199 @@
-.banner{
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-position: 80% 50%;
-    height: 100%;
-    color: white;
-    padding-top: 200px;
-}
-.photo{
-    width: 150px;
-    border-radius: 50%;
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1A1A1A;
+  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  align-items: center;         /* <- Necesario para centrar horizontalmente */
+  margin: 0;                   /* <- Evita espacios que agregan los navegadores */
+  padding: 10px;
 }
 
-.carousel-inner > .carousel-item > img {
-    width:640px;
-    height:360px;
-    object-fit: scale-down;
-  }
+.container{
+  background-color: #0D0D0D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 60%;
+  margin: 1.5rem;
+}
+
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.project-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.photo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  padding: 0 20px;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.project{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-img{
+  border-radius: 5%;
+  width: 300px;
+  margin: 10px;
+}
+
+.project-title{
+  color: #E0E0E0;
+  font-size: 25px;
+}
+
+.photo{
+  border-radius: 50%;
+  width: 200px;
+}
+
+
+h1{
+  color:#007BFF;
+  margin: 10px 0;
+  font-size:50px;
+
+}
+
+h2{
+  display: inline-block;
+  color:#E0E0E0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size:30px;
+
+}
+
+h3{
+  color:#A0A0A0;
+  margin: 2px 0;
+  font-size: 20px;
+}
 
 p{
-    color: white;
+  color:#A0A0A0;
+  margin: 5px 0;
+  font-size: 18px;
 }
 
-h5{
-    color: white;
+a{
+  text-align: center;
+  text-decoration: none;
+}
+
+
+button:hover{
+  background-color: #0056b3;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007BFF;
+  color: #E0E0E0;
+  font-weight: bold;
+  font-size: 15px;
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
   border: none;
+  margin-top: 20px ;
+  
 }
 
-/* The container <div> - needed to position the dropdown content */
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #1A1A1A;
+  width: 110px;
+  
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
-  color: black;
+  color: #E0E0E0;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
 
-/* Show the dropdown menu on hover */
+.dropdown-content a:hover {background-color: #282828;}
+
+
 .dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+.dropdown:hover .dropbtn {background-color: #0056b3;}
+
+
+
+
+@media (max-width: 760px) {
+  .container {
+    flex-direction: column;      
+    padding: 1rem;          
+    height: auto;                
+  }
+
+  .photo-container,
+  .content-container {
+    
+    width: 100%;                 
+  }
+
+  .content-container{
+    margin-top: 50px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  .photo {
+    width: 180px;
+    margin-top: 50px;
+  }
+ 
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 75%;
+  }
+
+  
+}
